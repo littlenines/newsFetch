@@ -1,0 +1,31 @@
+{
+  "name": "newsfetch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel -p 3030 pages/*.html",
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/littlenines/newsFetch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/littlenines/newsFetch/issues"
+  },
+  "homepage": "https://github.com/littlenines/newsFetch#readme",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "parcel": "^2.3.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@parcel/babel-preset-env": "^2.3.2",
+    "babel-jest": "^27.5.1"
+  }
+}

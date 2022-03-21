@@ -1,16 +1,8 @@
+import {fetchNewsData}  from "./fetchApi.js";
+
 const news = document.querySelector('[data-news]');
 
-const fetchNewsData = async () => {
-    try {
-        const response = await fetch("../news.json");
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error(error);
-    }
-}
-
-const displayNews = () => {
+export const displayNews = () => {
     fetchNewsData().then(data => {
         for (let i = 0; i < data.length; i++) {
             const { title, category, time, prefix } = data[i];
@@ -31,5 +23,3 @@ const displayNews = () => {
         }
     });
 }
-
-displayNews();
