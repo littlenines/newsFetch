@@ -373,6 +373,11 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+h2 {
+  font-size: 2rem;
+  line-height: 20px;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -402,18 +407,8 @@ table {
   border-spacing: 0;
 }
 
-.main-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 2rem;
-  line-height: 2rem;
-}
-
 .news {
-  padding-left: 1.5rem;
+  padding-left: 15px;
   position: relative;
 }
 
@@ -421,7 +416,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
   max-width: 550px;
 }
 
@@ -437,11 +432,16 @@ h2 {
 .news::before {
   content: "";
   position: absolute;
-  top: 10rem;
-  left: 3rem;
+  top: 100px;
+  left: 30px;
   width: 2px;
-  height: 80%;
+  height: 95%;
   background-color: #989898;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .news-timeline {
@@ -454,9 +454,8 @@ h2 {
 
 .news-timeline .news-time-posted {
   z-index: 1;
-  padding: 1rem 0;
+  padding: 10px 0;
   position: absolute;
-  left: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,16 +464,19 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #fff;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  min-width: 34px;
 }
 
 .image-wrapper {
-  margin: 0 1.5rem 0 4rem;
+  margin: 0 15px 0 40px;
 }
 
 .image-wrapper .image-thumbnail {
   max-width: 120px;
+}
+
+.news-title {
+  margin-bottom: 10px;
 }
 
 .news-category {
@@ -482,7 +484,7 @@ h2 {
   font-weight: bold;
   line-height: 1;
   text-transform: uppercase;
-  padding-left: .5rem;
+  padding-left: 5px;
   border-left: 3px solid #fed54f;
 }
 /*# sourceMappingURL=main.css.map */
