@@ -408,8 +408,9 @@ table {
 }
 
 .news {
-  padding-left: 15px;
   position: relative;
+  overflow: hidden;
+  padding-left: 15px;
 }
 
 .news .news-section {
@@ -420,22 +421,13 @@ table {
   max-width: 550px;
 }
 
-.news .news-section > div:first-of-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .news::before {
   content: "";
   position: absolute;
   top: 100px;
   left: 30px;
   width: 2px;
-  height: 95%;
+  height: calc(100% - 150px);
   background-color: #989898;
 }
 
@@ -445,16 +437,6 @@ table {
 }
 
 .news-timeline {
-  font-size: 2rem;
-  color: #989898;
-  font-weight: bold;
-  text-align: center;
-  position: relative;
-}
-
-.news-timeline .news-time-posted {
-  z-index: 1;
-  padding: 10px 0;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,8 +445,20 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 1;
+  padding: 10px 0;
+  min-width: 30px;
+  color: #989898;
   background-color: #fff;
-  min-width: 34px;
+}
+
+.news-timeline .time-prefix {
+  font-size: 1.5rem;
 }
 
 .image-wrapper {

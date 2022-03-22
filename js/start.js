@@ -1,7 +1,14 @@
 import {displayNews} from './main.js'
-import {fetchNewsData}  from "./fetchApi.js";
+
+const buttonLoad = document.querySelector('[data-load-more]');
+
 const run = () => {
-    displayNews(fetchNewsData());
+    displayNews();
 }
+
+
+buttonLoad.addEventListener('click', () => {
+    displayNews();
+})
 
 run();
