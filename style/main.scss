@@ -65,3 +65,15 @@
   padding-left: 5px;
   border-left: 3px solid $category-line;
 }
+
+.load-more {
+  padding: 10px;
+  display: block;
+  color: #F5F5F5;
+  font-size: 1.5rem;
+  background-color: #30475E;
+
+  &.hidden {
+    display: none;
+  }
+}

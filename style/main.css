@@ -407,6 +407,10 @@ table {
   border-spacing: 0;
 }
 
+button {
+  border: none;
+}
+
 .news {
   position: relative;
   overflow: hidden;
@@ -480,5 +484,17 @@ table {
   text-transform: uppercase;
   padding-left: 5px;
   border-left: 3px solid #fed54f;
+}
+
+.load-more {
+  padding: 10px;
+  display: block;
+  color: #F5F5F5;
+  font-size: 1.5rem;
+  background-color: #30475E;
+}
+
+.load-more.hidden {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
