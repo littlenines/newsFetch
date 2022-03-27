@@ -38,7 +38,7 @@ it('should call fetch, happy path test', async() => {
   expect(fetch).toHaveBeenCalledTimes(1);
 })
 
-it('should input to HTML', async () => {
+it('should input to HTML', () => {
   const data = [
     { title: 'Pocetak:Nova usluga eUprave - elektronski potspis na daljinu', category: 'Kategorija' },
     { title: 'Drugi:Stefan Milenkovic za Nova.rs: Ne mogu da zamislim zivot bez Kolarca', category: 'Kategorija' },
